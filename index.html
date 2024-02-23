@@ -6,71 +6,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
  
-    <style>
-        #main_logo{
-            width: 200px;
-            margin-left: 15px;
-            margin-right: 50px;
-        }
-
-        /*#search_div{
-            float: left;
-        }*/
-
-        #search{
-            width: 200px;
-            margin-top: 15px;
-            height: .5in;
-        }
-
-        .card {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .card-body {
-            flex: 1;
-        }
-
-        #card1, #card2, #card3 {
-            background-color: white;
-            width: 90%;
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        #card1:hover, #card2:hover, #card3:hover {
-            background-color: rgb(232, 234, 255);
-            transform: scale(1.05);
-        }
-
-        .card-title {
-            text-align: center;
-        }
-
-        .btn-container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            height: 100%;
-        }
-
-        .btn {
-            width: 80%;
-            margin: 20px;
-        }
-
-        #icons{
-            width: 90%;
-            margin: 20px;
-        }
-
-    </style>
-    <title>Henhentabs Apps</title>
+    <title>Henhentabs Applications</title>
 </head>
 <body>
+    <link rel="stylesheet" href="css/index.css">
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
         <div class="container-fluid">
             <img src="ICONS/HENHENTABZ_ICON_PNG.png" id="main_logo" class="card-img-top" alt="...">
@@ -112,56 +51,57 @@
 
     
     <div class="" style="text-align: center; margin: 20px;">
-        <h1>My Apps</h1>
+        <h1>143</h1>
+        <img src="ICONS/MY_APPS_GIF.gif" id="myapps_gif" class="card-img-top" alt="...">
     </div>
     
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-4 mt-4">
                 <div class="card mx-auto" id="card1">
-                    <img src="ICONS/H_CALCULATOR_ICON_PNG.png" id="icons" class="card-img-top" alt="...">
+                    <img src="ICONS/MY_CALCULATOR_GIF.gif" id="icons" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h1 class="card-title">My Calculator</h1>
-                        <button class="btn btn-primary" id="viewApp_button" type="button" onclick="to_calculator()" href="calculator.html">
+                        <button class="btn btn-primary" id="viewApp_button" type="button" onclick="to_calculator()" href="app/calculator.html">
                             View App
                         </button>
                     </div>
                 </div>
                 <script>
                     function to_calculator() {
-                        window.location.href = 'calculator.html';
+                        window.location.href = 'app/calculator.html';
                     }
                 </script>
             </div>
             <div class="col-md-4 mb-4 mt-4">
                 <div class="card mx-auto" id="card2">
-                    <img src="ICONS/H_TODO_LIST_ICON_PNG.png" id="icons" class="card-img-top" alt="...">
+                    <img src="ICONS/TODO_LIST_GIF.gif" id="icons" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h1 class="card-title">To-do List</h1>
-                        <button class="btn btn-primary" id="viewApp_button" type="button" onclick="to_todo_list()" href="todo_list.html">
+                        <button class="btn btn-primary" id="viewApp_button" type="button" onclick="to_todo_list()" href="app/todo_list.html">
                             View App
                         </button>
                     </div>
                 </div>
                 <script>
                     function to_todo_list() {
-                        window.location.href = 'todo_list.html';
+                        window.location.href = 'app/todo_list.html';
                     }
                 </script>
             </div>
             <div class="col-md-4 mb-4 mt-4">
                 <div class="card mx-auto" id="card3">
-                    <img src="ICONS/H_DYNAMIC_SEARCH_ICON_PNG.png" id="icons" class="card-img-top" alt="...">
+                    <img src="ICONS/DYNAMIC_SEARCH_GIF.gif" id="icons" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h1 class="card-title">Dynamic Search</h1>
-                        <button class="btn btn-primary" id="viewApp_button" type="button" onclick="to_dynamic_search()" href="dynamic_search.html">
+                        <button class="btn btn-primary" id="viewApp_button" type="button" onclick="to_dynamic_search()" href="app/dynamic_search.html">
                             View App
                         </button>
                     </div>
                 </div>
                 <script>
                     function to_dynamic_search() {
-                        window.location.href = 'dynamic_search.html';
+                        window.location.href = 'app/dynamic_search.html';
                     }
                 </script>
             </div>
