@@ -1,0 +1,59 @@
+#main_logo{
+    width: 200px;
+    margin-left: 15px;
+    margin-right: 50px;
+}
+
+/*#search_div{
+    float: left;
+}*/
+
+#search{
+    width: 200px;
+    margin-top: 15px;
+    height: .5in;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    flex: 1;
+}
+
+#card1, #card2, #card3 {
+    background-color: white;
+    width: 90%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#card1:hover, #card2:hover, #card3:hover {
+    background-color: rgb(232, 234, 255);
+    transform: scale(1.05);
+}
+
+.card-title {
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.btn {
+    width: 80%;
+    margin: 20px;
+}
+
+#icons{
+    width: 90%;
+    margin: 20px;
+}
